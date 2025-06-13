@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RICHIE ENTERTAINMENT</title>
+  <style>
+    @font-face {
+      font-family: 'Algerian';
+      src: local('Algerian');
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('backround.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header, .footer, .section-engine {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Algerian', serif;
+      font-size: 64px;
+      text-shadow: 2px 2px 6px black;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px 40px;
+      border-radius: 15px;
+    }
+
+    .btn-purple {
+      background-color: #7B2CBF;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+
+    .btn-purple:hover {
+      transform: scale(1.05);
+    }
+
+    .info-text {
+      font-style: italic;
+      font-size: 18px;
+      margin-top: 15px;
+      max-width: 600px;
+    }
+
+    .engine-img {
+      max-width: 400px;
+      margin: 20px 0;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+    }
+
+    .scroll-link {
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 20px;
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RICHIE ENTERTAINMENT</h1>
+  </header>
+
+  <div class="footer">
+    <a href="#engine-section" class="scroll-link">
+      <button class="btn-purple">MALI RENDER ENGINE</button>
+    </a>
+    <p class="info-text">MALI RENDER ENGINE IS A PROPRIETARY 3D ENGINE CREATED AND 100% OWNED BY RICHIE ENTERTAINMENT</p>
+  </div>
+
+  <div id="engine-section" class="section-engine">
+    <img src="maliengine.png" alt="MALI Engine Preview" class="engine-img">
+    <p class="info-text">MALI RENDER ENGINE IS ALSO CROSS-PLATFORM.</p>
+    <a href="down/malienginestup.exe" download>
+      <button class="btn-purple">DOWNLOAD LAUNCHER</button>
+    </a>
+  </div>
+
+  <footer>
+    &copy; RICHIE ENTERTAINMENT 2025
+  </footer>
+
+</body>
+</html>
